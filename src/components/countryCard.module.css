@@ -1,0 +1,15 @@
+.countryCard {
+    display: inline-block;
+    width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 24px;
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    background-color: var(--elements-color);
+}
+
+.countryCard:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.2);
+}
