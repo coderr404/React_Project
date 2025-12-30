@@ -1,23 +1,26 @@
- import styles from './countryCard.module.css'
- function countryCard() {
+import styles from "./countryCard.module.css";
+function countryCard({name, flag ,population, region, capital}) {
+    
   return (
-     <a className={styles.countryCard} href={`/country.html?name=${name.common}`}>
-      <img src='https://flagcdn.com/bb.svg' alt='' />
-      <div className="card-text">
-        <h3 className="card-title">indigo</h3>
-        <p>
-          <b>Population: </b>
-          {population.toLocaleString('en-IN')}
+    <a
+      className={styles.countryCard}
+    //   href={flag}
+    >
+      <img className = {styles.imgg} src={flag} alt="" />
+      <div className={styles.cardText}>
+        <h3 className={styles.cardTitle}>{name}</h3>
+        <p className={styles.cardTextP}>
+          <b>Population: </b> {population}
         </p>
         <p>
           <b>Region: </b>{region}
         </p>
-        <p>
+        <p className={styles.cardTextP}>
           <b>Capital: </b>{capital}
         </p>
       </div>
     </a>
-  )
+  );
 }
 
-export default countryCard
+export default countryCard;

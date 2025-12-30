@@ -3,6 +3,7 @@ import Header from "./components/header.jsx"
 import Searching from './components/searching.jsx'
 import SelectMenu from './components/menu.jsx'
 import CountryCard from './components/countryCard.jsx'
+import CountryContainer from './components/countryContainer.jsx'
 
  function App() {
   return (
@@ -12,8 +13,8 @@ import CountryCard from './components/countryCard.jsx'
         <Searching></Searching>
     <SelectMenu></SelectMenu>  
     </div>
-    <CountryCard></CountryCard>
-
+    
+    <CountryContainer></CountryContainer>
     </>
     
   )
