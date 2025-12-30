@@ -4,17 +4,21 @@ import Searching from './components/searching.jsx'
 import SelectMenu from './components/menu.jsx'
 import CountryCard from './components/countryCard.jsx'
 import CountryContainer from './components/countryContainer.jsx'
+import { useState } from "react";
+
+
 
  function App() {
+  let [query, setQuery] = useState('')
   return (
     <>
     <Header></Header>
     <div className="search-filter-container">
-        <Searching></Searching>
+        <Searching setQuery = {setQuery}></Searching>
     <SelectMenu></SelectMenu>  
     </div>
     
-    <CountryContainer></CountryContainer>
+    <CountryContainer query = {query}></CountryContainer>
     </>
     
   )

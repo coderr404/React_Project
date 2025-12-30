@@ -1,6 +1,6 @@
 import styles from "./searching.module.css";
 
-function searching() {
+function searching({setQuery}) {
   return (
     <>
       <div className={styles.searchContainer}>
